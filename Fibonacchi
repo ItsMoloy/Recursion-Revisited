@@ -1,0 +1,20 @@
+//Moloy Banerjee
+#include<stdio.h>
+ int fibonacchi(int n){
+        if(n==0){
+            return 0;
+        }
+        else if(n==1){
+            return 1;
+        }
+        else{
+            return(fibonacchi(n-1)+fibonacchi(n-2));
+        }
+    }
+    int main(){
+        int n=1000;
+        int i;
+        for(i=1;i<=n;i++){
+        printf("The %dth fibonacchi number is: %d\n",i,fibonacchi(i));
+    }
+    }
